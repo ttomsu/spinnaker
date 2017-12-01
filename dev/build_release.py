@@ -373,7 +373,7 @@ class Builder(object):
       shutil.rmtree(gradle_cache)
     # if __self.options.externalize_gcs_upload:
     tar_filename = name + '-{:%Y%m%d%H%M%S}'.format(datetime.datetime.utcnow())
-    gcs_staging_bucket = __self.options.gcs_staging_bucket or 'gs://spinnaker-build-gcb-staging'
+    gcs_staging_bucket = self.__options.gcs_staging_bucket or 'gs://spinnaker-build-gcb-staging'
     cmds = [
       ('tar -cf {tar_filename}.tar .'
         .format(tar_filename=tar_filename)),
