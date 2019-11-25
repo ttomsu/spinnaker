@@ -1586,7 +1586,7 @@ def init_argument_parser(parser, defaults):
            ' This is used to scp and ssh from this machine.')
 
   add_parser_argument(
-      parser, 'deploy_distributed_platform', defaults, 'kubernetes',
+      parser, 'deploy_distributed_platform', defaults, 'kubernetes_v2',
       choices=SUPPORTED_DISTRIBUTED_PLATFORMS,
       help='The platform to deploy spinnaker to when'
            ' --deploy_spinnaker_type=distributed')
