@@ -1075,7 +1075,7 @@ def init_argument_parser(parser, defaults):
            ' for tests.')
 
   add_parser_argument(
-      parser, 'test_gce_quota_region', defaults, 'us-central1',
+      parser, 'test_gce_quota_region', defaults, 'us-west2',
       help='GCE Compute Region to gather region quota limits from.')
 
   add_parser_argument(
